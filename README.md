@@ -17,6 +17,7 @@ How
 With
 ----
 Coffeescript : coffeescript.org
+Sample : http://jsfiddle.net/furkankaynak/WrEfz/7/
 
 Usage
 ---
