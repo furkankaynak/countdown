@@ -1,4 +1,7 @@
-
+/*
+Author: Furkan Kaynak
+Github: github.com/furkankaynak
+*/
 countdown = ({years,
                 months,
                 days,
@@ -11,10 +14,10 @@ countdown = ({years,
                 onTock
                 }) ->
     years ?= "" ; months ?= "" ; days ?= "" ; hours ?= "" ; minutes ?= "" ; seconds ?= ""
-    format ?= "`D gun/`M months/`Y years `H hours-`m minutes-`S seconds left"
+    format ?= "`Y/`M/`D `H:`m:`S"
     
     hasFinished ?= -> 
-        alert "asd"
+        console.log("Finished")
     onTick ?= -> 
         console.log("tick !!")
     onTock ?= ->
