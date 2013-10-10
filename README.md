@@ -42,7 +42,7 @@ Usage
  countdown
     date: new Date(2014,1,1),
     selector: "countdown",
-    format: "`Y year `M month `D day `H hours `m minutes `S seconds left
+    format: "`Y year `M month `D day `H hours `m minutes `S seconds left",
     hasFinished: -> 
         alert "Finished"    
  ```
