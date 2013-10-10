@@ -41,7 +41,7 @@ Usage
   ```javascript
  countdown
     date: new Date(2014,1,1),
-    selector: "countdown"
+    selector: "countdown",
     hasFinished: -> 
         alert "Finished"    
  ```
