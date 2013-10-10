@@ -24,6 +24,10 @@ Sample : http://jsfiddle.net/furkankaynak/WrEfz/7/
 Usage
 ---
 
+```html
+<span id="countdown"></span>
+```
+
  ```javascript
  countdown
     years: 300,
@@ -33,6 +37,16 @@ Usage
     hasFinished: -> 
         alert "Finished"    
  ```
+ 
+  ```javascript
+ countdown
+    date: new Date(2014,1,1),
+    selector: "countdown"
+    hasFinished: -> 
+        alert "Finished"    
+ ```
+ 
+ `selector` must be id. Default selector id `countdown`
  
  Author
  ---
