@@ -42,11 +42,26 @@ Usage
  countdown
     date: new Date(2014,1,1),
     selector: "countdown",
+    format: "`Y year `M month `D day `H hours `m minutes `S seconds left
     hasFinished: -> 
         alert "Finished"    
  ```
  
  `selector` must be id. Default selector id `countdown`
+
+Formatting
+
+`Y - Year
+
+`M - Month
+
+`D - Day
+
+`H - Hours
+
+`m - Minutes
+
+`S - Seconds
  
  Author
  ---
