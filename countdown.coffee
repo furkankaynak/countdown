@@ -1,8 +1,5 @@
-/*
-Author: Furkan Kaynak
-Github: github.com/furkankaynak
-*/
-countdown = ({years,
+  countdown = ({date,
+                years,
                 months,
                 days,
                 hours,
@@ -14,16 +11,26 @@ countdown = ({years,
                 onTock
                 }) ->
     years ?= "" ; months ?= "" ; days ?= "" ; hours ?= "" ; minutes ?= "" ; seconds ?= ""
-    format ?= "`Y/`M/`D `H:`m:`S"
+    format ?= "`D gun/`M months/`Y years `H hours-`m minutes-`S seconds left"
     
     hasFinished ?= -> 
-        console.log("Finished")
+        alert "asd"
     onTick ?= -> 
         console.log("tick !!")
     onTock ?= ->
         console.log("tock !!")
         
-    year2secCoef = 31557600 ; month2secCoef = 2678400 ; day2secCoef = 86400 ; hour2secCoef = 3600 
+    year2secCoef = 31536000 ; month2secCoef = 2628200 ; day2secCoef = 86400 ; hour2secCoef = 3600
+    
+    time = 0
+    if(date?)
+        now = new Date
+        years = Math.abs(date.getFullYear() - now.getFullYear())
+        months = Math.abs(date.getMonth() - now.getMonth())
+        days = Math.abs(date.getDay() - now.getDay())
+        hours = Math.abs(date.getHours() - now.getHours())
+        minutes = Math.abs(date.getMinutes() - now.getMinutes())
+        seconds = Math.abs(date.getSeconds() - now.getSeconds())
         
     time = (years*year2secCoef) + (months*month2secCoef) + (days*day2secCoef) + (hours*hour2secCoef) + (minutes * 60)+ seconds
     
